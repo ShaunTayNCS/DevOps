@@ -2,13 +2,13 @@ pipeline {
     agent any
  
     tools {
-        maven 'Maven 3.6.3' // Adjust the Maven version as needed
+        maven 'Maven 3.9.4' // Adjust the Maven version as needed
     }
  
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/your-repo/your-project.git', branch: 'main'
+                git url: 'https://github.com/ShaunTayNCS/DevOps.git', branch: 'master'
             }
         }
  
